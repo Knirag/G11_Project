@@ -1,0 +1,7 @@
+# Ignore build directories
+build/
+.dart_tool/
+.pub-cache/
+pubspec.lock
+pubspec.yaml
+flutter_settings
