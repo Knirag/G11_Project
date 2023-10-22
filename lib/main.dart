@@ -1,9 +1,20 @@
+import 'package:chat_app/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  runApp(SignupApp());
 }
 
+
+
+/*void main() {
+  runApp(const MyApp());
+}
+*/
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -198,7 +209,7 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: Drawer(
         width: 275,
         elevation: 30,
-        backgroundColor: Color(0xF3393838),
+        backgroundColor: const Color(0xF3393838),
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.horizontal(right: Radius.circular(40))),
         child: Container(
@@ -209,15 +220,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 BoxShadow(
                     color: Color(0x3D000000), spreadRadius: 30, blurRadius: 20)
               ]),
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 50, 20, 20),
+          child: const Padding(
+            padding: EdgeInsets.fromLTRB(20, 50, 20, 20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
                     Row(
-                      children: const [
+                      children: [
                         Icon(
                           Icons.arrow_back_ios,
                           color: Colors.white,
@@ -232,11 +243,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 30,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         UserAvatar(filename: 'img3.jpeg'),
                         SizedBox(
                           width: 12,
@@ -247,28 +258,28 @@ class _MyHomePageState extends State<MyHomePage> {
                         )
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 35,
                     ),
-                    const DrawerItem(
+                    DrawerItem(
                       title: 'Account',
                       icon: Icons.key,
                     ),
-                    const DrawerItem(title: 'Chats', icon: Icons.chat_bubble),
-                    const DrawerItem(
+                    DrawerItem(title: 'Chats', icon: Icons.chat_bubble),
+                    DrawerItem(
                         title: 'Notifications', icon: Icons.notifications),
-                    const DrawerItem(
+                    DrawerItem(
                         title: 'Data and Storage', icon: Icons.storage),
-                    const DrawerItem(title: 'Help', icon: Icons.help),
-                    const Divider(
+                    DrawerItem(title: 'Help', icon: Icons.help),
+                    Divider(
                       height: 35,
                       color: Colors.green,
                     ),
-                    const DrawerItem(
+                    DrawerItem(
                         title: 'Invite a friend', icon: Icons.people_outline),
                   ],
                 ),
-                const DrawerItem(title: 'Log out', icon: Icons.logout)
+                DrawerItem(title: 'Log out', icon: Icons.logout)
               ],
             ),
           ),
