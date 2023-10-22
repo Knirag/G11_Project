@@ -25,3 +25,30 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+# macOS
+.DS_Store
+
+# Android Studio
+.idea/
+
+# Flutter/Dart
+.pub-cache/
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+pubspec.yaml
+flutter_settings
+
+# Android
+build/
+.gradle/
+local.properties
+
+# iOS
+.vscode/
+ios/Pods/
+ios/Podfile.lock
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/
