@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "91856476376",
+    "project_id": "eduspheres-d2cb4",
+    "storage_bucket": "eduspheres-d2cb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91856476376:android:df580e031249280fee5fad",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91856476376-hfhh8vv5id3mb6uaquiu3voi1h2i06fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTMmn9FOLq3OK9uPGqKkTRr5kDOvN4KN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91856476376-hfhh8vv5id3mb6uaquiu3voi1h2i06fj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91856476376-8jlmvfcngimafoqnuevp68jrgf8fbmra.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.untitled"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
